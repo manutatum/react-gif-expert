@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+//Recibe el titulo y la url
 export const GifItem = ({title,url}) => {
     return(
         <div className="card">
@@ -6,3 +8,8 @@ export const GifItem = ({title,url}) => {
         </div>
     )
 }
+//Propiedades de los Items
+GifItem.propTypes = {
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+};
